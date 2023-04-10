@@ -1,1 +1,117 @@
-
+@media (max-width: 768px) {
+    body {
+      width: 100%;
+    }
+    .nav_menu {
+        flex-direction: column;
+    }
+    .foot {
+        flex-direction: row;
+    }
+    .rs-photo {
+        margin: 0.5px;
+    }
+    .text_footer {
+        margin: 0.5px;
+    }
+    .github_photo {
+        margin: 0.5px;
+    }
+}
+html {
+    background-color: #5FBDCE;
+    color: white;
+    font-family: 'raleway';
+}
+body{
+    margin: 0;
+}
+.nav_item {
+    font-family: 'raleway';
+    text-decoration: none;
+    color: whitesmoke;
+    margin: 10px;
+    font-size: 14px;
+}
+.nav_menu {
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-sizing: content-box;
+}
+.MyPhoto {
+    height: 198px;
+}
+header{
+    padding: 10px;
+    margin-bottom: 5px;
+    display: block;
+    background-color: #015666;
+    box-sizing: border-box;
+    width: 100%;
+}
+main{
+    font-family: 'raleway';
+    color: white;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: #04859D;
+    margin-inline-start:25%;
+    margin-inline-end: 25%;
+}
+h1 {
+    margin-bottom: 5px;
+}
+h2 {
+    margin-bottom:5px;
+}
+p {
+    margin-top: 3px;
+}
+ul {
+    margin-top: 3px;
+    padding-left: 15px;
+}
+section {
+    max-width: 1440px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: auto;
+    margin-left:3%;
+    margin-right:3%;
+}
+footer {
+    display: flex;
+    margin-top: 5px;
+    display: block;
+    background-color: #015666;
+    width: 100%;
+    max-height: 104px;
+    justify-content: center;
+}
+.github_photo{
+    display: flex;
+    max-width: 6vw;
+    align-self: center;
+}
+.text_footer {
+    display: flex;
+    font-size: 2vw;
+}
+.rs-photo{
+    display: flex;
+    max-width: 10vw;
+    margin: 3px;
+}
+.foot{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
