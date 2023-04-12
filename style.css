@@ -17,11 +17,17 @@
     .github_photo {
         margin: 0.5px;
     }
+   main {
+    flex-grow: 1;
+   }
+    
 }
+
 html {
     background-color: #5FBDCE;
     color: white;
     font-family: 'raleway';
+    font-size: 100%;
 }
 body{
     margin: 0;
@@ -39,8 +45,15 @@ body{
     align-items: center;
     box-sizing: content-box;
 }
+
+.main-center {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
 .MyPhoto {
-    height: 198px;
+    height: 25vw;
 }
 header{
     padding: 10px;
@@ -51,13 +64,14 @@ header{
     width: 100%;
 }
 main{
+    display: flex;
+    flex-direction: column;
     font-family: 'raleway';
     color: white;
     padding-bottom: 10px;
     padding-top: 10px;
     background-color: #04859D;
-    margin-inline-start:25%;
-    margin-inline-end: 25%;
+    width: 70vw;
 }
 h1 {
     margin-bottom: 5px;
