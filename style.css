@@ -97,35 +97,35 @@ section {
 footer {
     display: flex;
     margin-top: 5px;
-    display: block;
     background-color: #015666;
     width: 100%;
     max-height: 104px;
     justify-content: center;
 }
-.github_photo{
-    display: flex;
-    max-width: 6vw;
-    align-self: center;
-}
-.text_footer {
-    display: flex;
-    font-size: 2vw;
-}
-.rs-photo{
-    display: flex;
-    max-width: 10vw;
-    margin: 3px;
-}
+
 .foot{
     display: flex;
     width: 50%;
     justify-content: space-between;
     align-items: center;
-    text-align: center;
 }
 .center {
     display: flex;
-    justify-content: center;
-    text-align: center;
+    align-items: center;
+}
+.github_photo{
+    display: flex;
+    max-width: 6vw;
+    /* align-self: flex-start; */
+}
+.text_footer {
+    display: flex;
+    font-size: 100%;
+    /* justify-content: center; */
+}
+.rs-photo{
+    display: flex;
+    max-width: 10vw;
+    margin: 1%;
+    /* align-self: flex-end; */
 }
