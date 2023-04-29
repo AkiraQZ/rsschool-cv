@@ -17,10 +17,12 @@
     .github_photo {
         margin: 0.5px;
     }
-   main {
+    main {
     flex-grow: 1;
-   }
-    
+    }
+    footer {
+    height: 54px;
+    }
 }
 
 html {
