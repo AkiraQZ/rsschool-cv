@@ -96,6 +96,23 @@ section {
     margin-left:3%;
     margin-right:3%;
 }
+.code {
+    background-color: rgb(73, 70, 70);
+    font-size: medium;
+}
+
+.orange{
+    color: orange
+}
+.purple{
+    color: rgb(205, 3, 205)
+}
+.blue{
+    color:blue
+}
+.green{
+    color: greenyellow
+}
 footer {
     display: flex;
     margin-top: 5px;

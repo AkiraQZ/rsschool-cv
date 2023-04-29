@@ -55,10 +55,28 @@
     </section>
     <section class="SCode">
         <h2 id="CodeExample">Code Example</h2>
-         <code>
-         </code>
+        <p>This code is a solution to the task from codewars. Link to the task:<a href="https://goo.su/w1nJ3O">Tap it!</a></p>
+        
+        <div class="code">
+            <code> 
+            <span class="purple">function</span> <span class="yellow">isValidWalk</span>(<span class="yellow">walk</span>) {
+            <br><span class="purple">var</span> <span class="orange">dx</span> = <span class="orange">0</span>
+            <br><span class="purple">var</span> <span class="orange">dy</span> = <span class="orange">0</span>
+            <br><span class="purple">var</span> <span class="orange">dt</span> = <span class="blue">walk.length</span>
+            <br>
+            <br><span class="purple">for</span> (<span class="purple">var</span> <span class="orange">i</span> = <span class="orange">0</span>; <span class="blue">i</span> &lt<span class="blue">dt</span>; <span class="blue">i</span>++) {
+                <br> <span class="purple">switch</span> (<span class="blue">walk</span>[<span class="blue">i</span>]) {
+                <br><span class="purple">case</span> <span class="green">'n'</span>: <span class="blue">dy</span>--; <span class="purple">break</span>
+                <br><span class="purple">case</span> <span class="green">'s'</span>: <span class="blue">dy</span>++; <span class="purple">break</span>
+                <br><span class="purple">case</span> <span class="green">'w'</span>: <span class="blue">dx</span>--; <span class="purple">break</span>
+                <br><span class="purple">case</span> <span class="green">'e'</span>: <span class="blue">dx</span>++; <span class="purple">break</span>
+                <br>}
+                <br>}
+                <br><span class="purple">return</span> <span class="blue">dt</span> === <span class="orange">10</span> && <span class="blue">dx</span> === <span class="orange">0</span> && <span class="blue">dy</span> === <span class="orange">0</span>
+          }</code>
+        </div>
     </section>
-    <section class="SExpirence">
+    <section>
         <h2 id="Experience">Experience</h2>
         <p>None</p>
     </section>
