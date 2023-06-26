@@ -7,7 +7,6 @@
 * __Discord__: AkiraQZ#8165
 * __Telegram__: Akirakizi
 * __GitHub__: AkiraQZ
-*
 
 ## About Me 
 
