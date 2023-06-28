@@ -26,7 +26,7 @@
 }
 
 html {
-    background-color: #5FBDCE;
+    background-color: #C2948A;
     color: white;
     font-family: 'raleway';
     font-size: 100%;
@@ -55,13 +55,14 @@ body{
 }
 
 .MyPhoto {
-    height: 25vw;
+    height: 18vw;
+    border-radius: 50%;
 }
 header{
     padding: 10px;
     margin-bottom: 5px;
     display: block;
-    background-color: #015666;
+    background-color: #28536B;
     box-sizing: border-box;
     width: 100%;
 }
@@ -72,7 +73,7 @@ main{
     color: white;
     padding-bottom: 10px;
     padding-top: 10px;
-    background-color: #04859D;
+    background-color: #7EA8BE;
     width: 70vw;
 }
 h1 {
@@ -126,7 +127,7 @@ section {
 footer {
     display: flex;
     margin-top: 5px;
-    background-color: #015666;
+    background-color: #28536B;
     width: 100%;
     max-height: 104px;
     justify-content: center;
