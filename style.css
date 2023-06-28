@@ -96,6 +96,16 @@ section {
     margin-left:3%;
     margin-right:3%;
 }
+
+.link {
+    text-decoration: none;
+    color: white;
+}
+
+.link:visited {
+    color: white;
+}
+
 .code {
     background-color: rgb(73, 70, 70);
     font-size: medium;
