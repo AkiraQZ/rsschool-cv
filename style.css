@@ -150,11 +150,10 @@ footer {
 }
 .text_footer {
     display: flex;
-    font-size: 100%;
+    font-size: 1.5vw;
     /* justify-content: center; */
 }
 .rs-photo{
-    display: flex;
     max-width: 10vw;
     margin: 1%;
     /* align-self: flex-end; */
