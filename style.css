@@ -68,6 +68,7 @@ header{
     padding: 10px;
     margin-bottom: 5px;
     display: block;
+    justify-content: center;
     background-color: #28536B;
     box-sizing: border-box;
     width: 100%;
