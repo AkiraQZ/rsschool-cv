@@ -34,6 +34,11 @@ html {
 body{
     margin: 0;
 }
+.menu {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
 .nav_item {
     font-family: 'raleway';
     text-decoration: none;
@@ -43,6 +48,7 @@ body{
 }
 .nav_menu {
     display:flex;
+    flex-direction: row;
     justify-content: flex-end;
     align-items: center;
     box-sizing: content-box;
