@@ -47,9 +47,9 @@
         flex-direction: column;
         border-radius: 3%;
     }
-    .nav_item {
+    .menu li {
         padding:0px 0px 4px 0px !important;
-        margin: 0px !important;
+        margin-bottom: 4px !important;
     }
 }
 
@@ -105,7 +105,7 @@ body{
 }
 
 .MyPhoto {
-    height: 18vw;
+    height: 18vmax;
     border-radius: 50%;
 }
 header{
@@ -198,16 +198,16 @@ footer {
 }
 .github_photo{
     display: flex;
-    max-width: 6vw;
+    max-width: 8vmin;
     /* align-self: flex-start; */
 }
 .text_footer {
     display: flex;
-    font-size: 1.5vw;
+    font-size: 1.5vmax;
     /* justify-content: center; */
 }
 .rs-photo{
-    max-width: 10vw;
+    max-width: 10vmax;
     margin: 1%;
     /* align-self: flex-end; */
 }
