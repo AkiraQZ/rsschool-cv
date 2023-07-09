@@ -18,22 +18,60 @@
         margin: 0.5px;
     }
     main {
-    flex-grow: 1;
+        flex-grow: 1;
     }
     footer {
-    height: 54px;
+        height: 54px;
+    }
+}
+@media (min-width: 658px){
+    .burger_btn{
+        display: none !important;
+    }
+}
+
+@media (max-width: 658px){
+    .menu{
+        display: none !important;
+    }
+    header {
+        padding: 0px 4px !important;
+    }
+    .nav_menu:hover .menu {
+        background-color: #1e3e50;
+        padding: 8px;
+        margin: 0px !important;
+        display: flex !important;
+        position: absolute;
+        top:51.2px;
+        flex-direction: column;
+        border-radius: 3%;
+    }
+    .menu li {
+        padding:0px 0px 4px 0px !important;
+        margin-bottom: 4px !important;
     }
 }
 
 html {
     background-color: #C2948A;
+    padding: 0;
     color: white;
     font-family: 'raleway';
     font-size: 100%;
 }
 body{
     margin: 0;
+    padding: 0;
 }
+.menu {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
 .nav_item {
     font-family: 'raleway';
     text-decoration: none;
@@ -41,8 +79,20 @@ body{
     margin: 10px;
     font-size: 14px;
 }
+
+.burger_btn {
+    margin: 0px;
+    padding: 0px;
+    font-size: 44px;
+    color: white;
+    background-color: #28536B;
+    border: none;
+    cursor: pointer;
+}
+
 .nav_menu {
     display:flex;
+    flex-direction: row;
     justify-content: flex-end;
     align-items: center;
     box-sizing: content-box;
@@ -55,16 +105,19 @@ body{
 }
 
 .MyPhoto {
-    height: 18vw;
+    height: 18vmax;
     border-radius: 50%;
 }
 header{
-    padding: 10px;
     margin-bottom: 5px;
-    display: block;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    justify-content: space-between;
     background-color: #28536B;
     box-sizing: border-box;
     width: 100%;
+    padding: 12px 8px 16px 0px;
 }
 main{
     display: flex;
@@ -145,16 +198,16 @@ footer {
 }
 .github_photo{
     display: flex;
-    max-width: 6vw;
+    max-width: 8vmin;
     /* align-self: flex-start; */
 }
 .text_footer {
     display: flex;
-    font-size: 1.5vw;
+    font-size: 1.5vmax;
     /* justify-content: center; */
 }
 .rs-photo{
-    max-width: 10vw;
+    max-width: 10vmax;
     margin: 1%;
     /* align-self: flex-end; */
 }
