@@ -38,7 +38,7 @@
         padding: 0px 4px !important;
     }
     .nav_menu:hover .menu {
-        background-color: #1e3e50;
+        background-color: #404e5cc0;
         padding: 8px;
         margin: 0px !important;
         display: flex !important;
@@ -54,7 +54,7 @@
 }
 
 html {
-    background-color: #C2948A;
+    background-color: #DCCCBB;
     padding: 0;
     color: white;
     font-family: 'raleway';
@@ -85,7 +85,7 @@ body{
     padding: 0px;
     font-size: 44px;
     color: white;
-    background-color: #28536B;
+    background-color: #404E5C;
     border: none;
     cursor: pointer;
 }
@@ -114,7 +114,7 @@ header{
     flex-wrap: nowrap;
     flex-direction: row-reverse;
     justify-content: space-between;
-    background-color: #28536B;
+    background-color: #404E5C;
     box-sizing: border-box;
     width: 100%;
     padding: 12px 8px 16px 0px;
@@ -126,7 +126,7 @@ main{
     color: white;
     padding-bottom: 10px;
     padding-top: 10px;
-    background-color: #7EA8BE;
+    background-color: #EAB464;
     width: 70vw;
     border-radius: 24px;
 }
@@ -181,7 +181,7 @@ section {
 footer {
     display: flex;
     margin-top: 5px;
-    background-color: #28536B;
+    background-color:#404E5C;
     width: 100%;
     max-height: 104px;
     justify-content: center;
