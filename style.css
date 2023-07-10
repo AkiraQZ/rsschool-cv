@@ -2,24 +2,31 @@
     body {
       width: 100%;
     }
+
     .nav_menu {
         flex-direction: column;
     }
+
     .foot {
         flex-direction: row;
     }
+
     .rs-photo {
         margin: 0.5px;
     }
+
     .text_footer {
         margin: 0.5px;
     }
+
     .github_photo {
         margin: 0.5px;
     }
+
     main {
         flex-grow: 1;
     }
+
     footer {
         height: 54px;
     }
@@ -34,11 +41,13 @@
     .menu{
         display: none !important;
     }
+
     header {
         padding: 0px 4px !important;
     }
+
     .nav_menu:hover .menu {
-        background-color: #404e5cc0;
+        background-color: #404e5cbe;
         padding: 8px;
         margin: 0px !important;
         display: flex !important;
@@ -47,6 +56,7 @@
         flex-direction: column;
         border-radius: 3%;
     }
+
     .menu li {
         padding:0px 0px 4px 0px !important;
         margin-bottom: 4px !important;
@@ -60,10 +70,12 @@ html {
     font-family: 'raleway';
     font-size: 100%;
 }
+
 body{
     margin: 0;
     padding: 0;
 }
+
 .menu {
     display: flex;
     flex-direction: row;
@@ -108,6 +120,7 @@ body{
     height: 18vmax;
     border-radius: 50%;
 }
+
 header{
     margin-bottom: 5px;
     display: flex;
@@ -119,6 +132,7 @@ header{
     width: 100%;
     padding: 12px 8px 16px 0px;
 }
+
 main{
     display: flex;
     flex-direction: column;
@@ -130,19 +144,24 @@ main{
     width: 70vw;
     border-radius: 24px;
 }
+
 h1 {
     margin-bottom: 5px;
 }
+
 h2 {
     margin-bottom:5px;
 }
+
 p {
     margin-top: 3px;
 }
+
 ul {
     margin-top: 3px;
     padding-left: 15px;
 }
+
 section {
     max-width: 1440px;
     margin-top: 5px;
@@ -169,15 +188,19 @@ section {
 .orange{
     color: orange
 }
+
 .purple{
     color: rgb(205, 3, 205)
 }
+
 .blue{
     color:blue
 }
+
 .green{
     color: greenyellow
 }
+
 footer {
     display: flex;
     margin-top: 5px;
@@ -193,22 +216,23 @@ footer {
     justify-content: space-between;
     align-items: center;
 }
+
 .center {
     display: flex;
     align-items: center;
 }
+
 .github_photo{
     display: flex;
     max-width: 8vmin;
-    /* align-self: flex-start; */
 }
+
 .text_footer {
     display: flex;
     font-size: 1.5vmax;
-    /* justify-content: center; */
 }
+
 .rs-photo{
     max-width: 10vmax;
     margin: 1%;
-    /* align-self: flex-end; */
 }
