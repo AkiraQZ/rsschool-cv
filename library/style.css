@@ -1,1 +1,51 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
 
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: #0C0C0E;
+    height: 90px;
+    align-items: center;
+    padding: 0px 20px 0px 20px;
+}
+
+.logo_text {
+    font-family:'Forum';
+    font-size: 30px;
+    color: #FFFFFF;
+    letter-spacing: 0.55px;
+    margin-right: 456px;
+
+}
+
+.nav_menu {
+    box-sizing: content-box;
+}
+
+.nav_list {
+    display:flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav_list>li {
+    font-family: 'Inter';
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-right: 30px;
+}
+
+.nav_list :last-child {
+    margin-right: 41px;
+}
+
+.icon_profile {
+    height: 28px;
+    justify-self: flex-end;
+    display: flex;
+}
