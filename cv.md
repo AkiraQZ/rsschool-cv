@@ -7,7 +7,6 @@
 * __Discord__: AkiraQZ#8165
 * __Telegram__: Akirakizi
 * __GitHub__: AkiraQZ
-*
 
 ## About Me 
 
@@ -20,7 +19,14 @@ I'm going through stage 0 at RS school on my own.
 * Git (studying)
 
 ## Code Example 
+This code is solution to [this](https://www.codewars.com/kata/539a0e4d85e3425cb0000a88) codewars task.
 ```
+function add(n) {
+  const func = x => add(n + x)
+  func.valueOf = () => n
+
+  return func
+}
 ```
 ## Experience
 ## Education
