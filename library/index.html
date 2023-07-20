@@ -8,8 +8,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title></title>
   <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="stylesheet" href="styles/normalize.css" type="text/css">
+  <link rel="stylesheet" href="styles/style.css" type="text/css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -18,7 +18,7 @@
 </head>
 
 <body>
-  <header>
+  <header class="container">
     <div class="container header__container">
       <!-- <span class="logo_text">Brooklyn Public Library</span> -->
       <h1 class="logo_text">Brooklyn Public Library</h1>
@@ -31,16 +31,24 @@
           <li>Library Card</li>
         </ul>
       </nav>
-      <button>
+      <button class="profile_btn">
         <img class="icon_profile" src="static/header/icon_profile.png" alt="profile_pic">
       </button>
     </div>
   </header>
   <main>
-    <section class="welcome">
-      <div class="welcome_text">
-        WELOCOME TO THE BROOKLYN LIBRARY
+    <section class="welcome container">
+      <div class="background_gradient"></div>
+      <div class="welcome_text container">
+        <h2>WELCOME<br>TO THE BROOKLYN<br>LIBRARY</h2>
       </div>
+    </section>
+    <section class="favorite container">
+      <div class="favorites head">
+        <h2>favorite</h2>
+      </div>
+      <div class="favorites_btn"></div>
+
     </section>
   </main>
 </body>
