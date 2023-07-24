@@ -37,18 +37,51 @@
     </div>
   </header>
   <main>
-    <section class="welcome container">
+    <section class="welcome_section container">
       <div class="background_gradient"></div>
       <div class="welcome_text container">
         <h2>WELCOME<br>TO THE BROOKLYN<br>LIBRARY</h2>
       </div>
     </section>
-    <section class="favorite container">
-      <div class="favorites head">
-        <h2>favorite</h2>
+    <section class="about_section container">
+     <div class="section_title"><h2>About</h2>
+       <div class="section_title_line"></div>
+    </div>
+     <p class="section_subtext">The Brooklyn Library is a free workspace, a large number of books and a cozy coffee shop inside</p>
+     <div class="about_slider">
+      <div class="about_slider_images">
+        <ul class="about_slider_images_list">
+          <li><img src="static/about/about_image_1.png" alt="slidebar_img_1"></li>
+          <li><img src="static/about/about_image_2.png" alt="slidebar_img_2"></li>
+          <li><img src="static/about/about_image_3.png" alt="slidebar_img_3"></li>
+          <li><img src="static/about/about_image_4.png" alt="slidebar_img_4"></li>
+          <li><img src="static/about/about_image_5.png" alt="slidebar_img_5"></li>
+        </ul>
       </div>
-      <div class="favorites_btn"></div>
-
+      <div class="about_slider_pagination">
+        <div class="pagination_circle_btn"><div class="pagination_circle_clicked"></div></div>
+        <div class="pagination_circle_btn"><div class="pagination_circle"></div></div>
+        <div class="pagination_circle_btn"><div class="pagination_circle"></div></div>
+      </div>
+     </div>
+    </section>
+    <section class="favorites_section container">
+      <div class="section_title"><h2>Favorites</h2>
+        <div class="section_title_line"></div>
+     </div>
+     <div class="favorites_buttons">
+     <p class="favorites_buttons_title">Pick favorites of season</p>
+     <div class="favorites_buttons_list">
+      <label class="favorites_button">
+        <input type="radio" name="winter_btn"/>Winter</label>
+      <label class="favorites_button">
+        <input type="radio" name="spring_btn"/>Spring</label>
+      <label class="favorites_button">
+        <input type="radio" name="summer_btn"/>Summer</label>
+      <label class="favorites_button">
+        <input type="radio" name="autumn_btn"/>Autumn</label>
+     </div>
+    </div>
     </section>
   </main>
 </body>
