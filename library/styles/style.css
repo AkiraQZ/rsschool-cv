@@ -8,9 +8,6 @@
     height: 220px;
   }
 } */
-:root {
-  --form-control-color: green;
-}
 
 *,
 *:before,
@@ -253,14 +250,17 @@
   }
 
   .favorites_buttons_list{
+    display: flex;
+    flex-direction: row;
+    gap: 94px;
     margin: 40px 0px 0px 20px;
-    list-style: none;
-    padding: 0px;
+    padding: 0.8px;
     font-family: Inter;
+    overflow: hidden;
   }
 
-  .favorites_button{
-    margin: 40px 88px auto auto;
+  .favorites_button_label{
+    margin: 0px;
     text-align: center;
     color: #000;
     font-family: Inter;
@@ -270,30 +270,72 @@
     line-height: normal;
   }
 
+
 /* ПОФИКСИТЬ КНОПКИ !!!!!!!!! */
-  .favorites_button>input[type="radio"] {
+  .favorites_button_label{
+    margin: 0;
+  }
+
+
+
+  [type="radio"]:checked + .favorites_button_label:after {
+    font-weight: 400;
+  }
+
+  [type="radio"]:checked,
+  [type="radio"]:not(:checked) {
     appearance: none;
-    background-color: #fff;
-    margin-right: 20px;
-    font: inherit;
-    color: currentColor;
+  }
+
+  [type="radio"]:checked + label,
+  [type="radio"]:not(:checked) + label{
+    position: relative;
+    padding-left: 29px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: black;
+}
+
+ [type="radio"]:checked + label:before,
+ [type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: -5px;
+    top: 4px;
     width: 17px;
     height: 17px;
-    border: 2px solid currentColor;
-    border-radius: 50px;
-    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 100%;
+    background: #fff;
   }
 
-  input[type="radio"]::before {
-    content: "";
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+    content: '';
     width: 7px;
     height: 7px;
-    border-radius: 50px;
-    transform: scale(0);
-    transition: 120ms transform ease-in-out;
-    box-shadow: inset 1em 1em var(--form-control-color);
-  }
+    background: black;
+    position: absolute;
+    top: 9px;
+    left: 0px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
 
-  input[type="radio"]:checked::before {
+[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(1);
     transform: scale(1);
-  }
+}
+
+[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+[type="radio"]:checked + label{
+  font-weight: 700;
+}

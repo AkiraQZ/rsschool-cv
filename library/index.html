@@ -71,16 +71,24 @@
      </div>
      <div class="favorites_buttons">
      <p class="favorites_buttons_title">Pick favorites of season</p>
-     <div class="favorites_buttons_list">
-      <label class="favorites_button">
-        <input type="radio" name="winter_btn"/>Winter</label>
-      <label class="favorites_button">
-        <input type="radio" name="spring_btn"/>Spring</label>
-      <label class="favorites_button">
-        <input type="radio" name="summer_btn"/>Summer</label>
-      <label class="favorites_button">
-        <input type="radio" name="autumn_btn"/>Autumn</label>
-     </div>
+     <form class="favorites_buttons_list" action="#">
+      <div class="favorites_button">
+        <input type="radio" id="test1" name="radio-group" checked>
+        <label class="favorites_button_label" for="test1">Winter</label>
+      </div>
+      <div class="favorites_button">
+        <input type="radio" id="test2" name="radio-group">
+        <label class="favorites_button_label" for="test2">Spring</label>
+      </div>
+      <div class="favorites_button">
+        <input type="radio" id="test3" name="radio-group">
+        <label class="favorites_button_label" for="test3">Summer</label>
+      </div>
+      <div class="favorites_button">
+        <input type="radio" id="test4" name="radio-group">
+        <label class="favorites_button_label" for="test4">Autumn</label>
+      </div>
+    </form>
     </div>
     </section>
   </main>
