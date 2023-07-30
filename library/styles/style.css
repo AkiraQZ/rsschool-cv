@@ -80,6 +80,20 @@ p {
     margin-right: 30px;
   }
 
+  .nav_list>li>a{
+    text-decoration: none;
+    color: inherit;
+    /* Костыль */
+    margin: 0px !important;
+    /* Костыль */
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  .nav_list>li>a:hover{
+    color: #BB945F;
+    cursor: pointer
+  }
+
   .nav_list :last-child {
     margin-right: 35px;
   }
