@@ -761,7 +761,7 @@ footer{
   margin-top: 40px;
   background-color:#0C0C0E;
   color: #FFF;
-  padding: 20px 20px 44px 20px;
+  padding: 18px 20px 44px 20px;
 }
 
 .footer_line {
@@ -801,6 +801,18 @@ footer{
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.footer_top_icons{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.footer_icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
 }
 
 .footer_bottom{
