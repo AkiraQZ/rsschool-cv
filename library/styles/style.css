@@ -146,7 +146,7 @@ p {
     overflow: hidden;
   }
 
-  .welcome_text>p {
+  .welcome_text>h3 {
     font-family: 'Forum';
     font-size: 40px;
     color: #FFFFFF;
@@ -806,7 +806,15 @@ footer{
 .footer_top_icons{
   display: flex;
   flex-direction: row;
-  gap: 15px;
+}
+
+.social_list{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap:15px;
+  padding: 0px;
+  margin: 0px;
 }
 
 .footer_icon {
