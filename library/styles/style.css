@@ -146,7 +146,7 @@ p {
     overflow: hidden;
   }
 
-  .welcome_text>h2 {
+  .welcome_text>p {
     font-family: 'Forum';
     font-size: 40px;
     color: #FFFFFF;
@@ -573,6 +573,16 @@ p {
   font-weight: 400;
   letter-spacing: 2px;
   text-transform: capitalize;
+}
+
+.contacts_text_main>a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.contacts_text_bold>a{
+  text-decoration: none;
+  color: inherit;
 }
 
 .contacts_text_subtitle {
