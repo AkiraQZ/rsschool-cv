@@ -663,9 +663,12 @@ p {
 @media screen and (max-width:1024px) {
   .contacts_content {
     flex-direction: column;
+    gap: 60px;
   }
-  .contacts_img {
-
+  .contacts_img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -720,10 +723,23 @@ p {
   margin-bottom: 34px;
 }
 
+@media screen and (max-width:1024px) {
+  .contacts_section{
+    margin-bottom: 40px;
+  }
+}
+
 .card_section_content {
   display: flex;
   margin: 40px 20px 41px 20px;
   justify-content: space-between;
+}
+
+@media screen and (max-width:1024px) {
+  .card_section_content{
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .card_block {
@@ -837,7 +853,7 @@ p {
 }
 
 .card_description_text{
-  text-align: right;
+  width: 456px;
   color: #000;
   text-align: right;
   font-family: Inter;
@@ -862,6 +878,22 @@ p {
   flex-shrink: 0;
 }
 
+@media screen and (max-width:1024px) {
+  .card_description {
+    align-items: center;
+    gap: 40px;
+  }
+
+  .card_description_text {
+    text-align: center;
+    width: 78vw;
+  }
+
+  .card_block {
+    margin-bottom: 21px;
+  }
+}
+
 footer{
   margin-top: 40px;
   background-color:#0C0C0E;
@@ -870,11 +902,16 @@ footer{
 }
 
 .footer_line {
-  width: 1400px;
+  width: 96vw;
   height: 1px;
   background: #FFF;
 }
+@media screen and (min-width:1440px){
+  .footer_line{
+    width: 1400px;
+  }
 
+}
 .footer_top{
   display: flex;
   flex-direction: row;
