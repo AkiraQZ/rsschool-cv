@@ -125,21 +125,41 @@ p {
       display: block;
       position: absolute;
       right: -332px;
-      top: 0px;
+      top: 89px;
       width: 332px;
-      background-color: #000000;
+      background-color: #0C0C0E;
+      z-index: 1;
+      transition: transform .5s, visability .5s;
     }
 
     .nav_list{
       display: block;
+      text-align: center;
     }
 
     .nav_list>li {
       margin-right: 0px;
+      margin-top: 57px;
     }
 
     .nav_list :last-child{
       margin-right: 0px;
+      margin-bottom: 127px;
+    }
+
+    header.open .nav_menu {
+      transform: translateX(-100%);
+    }
+
+    header.open .burger_btn {
+      display: none;
+      visibility: hidden;
+    }
+
+    header.open .cross_btn {
+      display: block;
+      visibility: visible;
+      margin-left: 43px;
     }
   }
 
@@ -150,6 +170,16 @@ p {
   }
 
   .burger_btn {
+    display: none;
+    position: relative;
+    background: none;
+    cursor: pointer;
+    border: none;
+    z-index: 2;
+
+  }
+
+  .cross_btn{
     display: none;
     position: relative;
     background: none;

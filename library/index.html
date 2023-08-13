@@ -18,6 +18,7 @@
     rel="stylesheet">
   <link rel="icon" href="static/favicon/favicon-32x32.png">
   <script src="scripts/self-esteem.js"></script>
+  <script defer src="scripts/main.js"></script>
 </head>
 
 <body>
@@ -26,7 +27,7 @@
     <div class="container header__container">
       <!-- <span class="logo_text">Brooklyn Public Library</span> -->
       <h1 class="logo_text">Brooklyn Public Library</h1>
-      <nav class="nav_menu">
+      <nav class="nav_menu" id="menu">
         <ul class="nav_list">
           <li><a href="#about">About</a></li>
           <li><a href="#favorites">Favorites</a></li>
@@ -41,12 +42,16 @@
         </svg>
         <!-- <img class="icon_profile" src="static/header/icon_profile.png" alt="profile_pic"> -->
       </button>
-      <button class="burger_btn"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="22" viewBox="0 0 45 22" fill="none">
+      <button class="burger_btn" id="burger"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="22" viewBox="0 0 45 22" fill="none">
 <line y1="1" x2="45" y2="1" stroke="white" stroke-width="2"/>
 <line y1="11" x2="45" y2="11" stroke="white" stroke-width="2"/>
 <line y1="21" x2="45" y2="21" stroke="white" stroke-width="2"/>
 </svg>
       </button>
+      <button class="cross_btn" id="cross"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="34" viewBox="0 0 36 34" fill="none">
+        <line y1="-1" x2="45.0642" y2="-1" transform="matrix(0.710098 0.704103 -0.710098 0.704103 2 2.00003)" stroke="white" stroke-width="2"/>
+        <line y1="-1" x2="45.0642" y2="-1" transform="matrix(0.710098 -0.704103 0.710098 0.704103 2 34)" stroke="white" stroke-width="2"/>
+        </svg></button>
     </div>
   </header>
   <main>
