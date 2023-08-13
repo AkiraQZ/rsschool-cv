@@ -18,14 +18,16 @@
     rel="stylesheet">
   <link rel="icon" href="static/favicon/favicon-32x32.png">
   <script src="scripts/self-esteem.js"></script>
+  <script defer src="scripts/main.js"></script>
 </head>
 
 <body>
+  <div class="body_wrapper">
   <header class="container">
     <div class="container header__container">
       <!-- <span class="logo_text">Brooklyn Public Library</span> -->
       <h1 class="logo_text">Brooklyn Public Library</h1>
-      <nav class="nav_menu">
+      <nav class="nav_menu" id="menu">
         <ul class="nav_list">
           <li><a href="#about">About</a></li>
           <li><a href="#favorites">Favorites</a></li>
@@ -40,12 +42,16 @@
         </svg>
         <!-- <img class="icon_profile" src="static/header/icon_profile.png" alt="profile_pic"> -->
       </button>
-      <div class="burger_btn"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="22" viewBox="0 0 45 22" fill="none">
+      <button class="burger_btn" id="burger"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="22" viewBox="0 0 45 22" fill="none">
 <line y1="1" x2="45" y2="1" stroke="white" stroke-width="2"/>
 <line y1="11" x2="45" y2="11" stroke="white" stroke-width="2"/>
 <line y1="21" x2="45" y2="21" stroke="white" stroke-width="2"/>
 </svg>
-</div>
+      </button>
+      <button class="cross_btn" id="cross"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="34" viewBox="0 0 36 34" fill="none">
+        <line y1="-1" x2="45.0642" y2="-1" transform="matrix(0.710098 0.704103 -0.710098 0.704103 2 2.00003)" stroke="white" stroke-width="2"/>
+        <line y1="-1" x2="45.0642" y2="-1" transform="matrix(0.710098 -0.704103 0.710098 0.704103 2 34)" stroke="white" stroke-width="2"/>
+        </svg></button>
     </div>
   </header>
   <main>
@@ -62,6 +68,9 @@
      <p class="section_subtext">The Brooklyn Library is a free workspace, a large number of books and a cozy coffee shop inside</p>
      <div class="about_slider">
       <div class="about_slider_images">
+        <div class="adaptive_arrow"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="23" viewBox="0 0 14 23" fill="none">
+          <path d="M0.93934 10.4393C0.353553 11.0251 0.353553 11.9749 0.93934 12.5607L10.4853 22.1066C11.0711 22.6924 12.0208 22.6924 12.6066 22.1066C13.1924 21.5208 13.1924 20.5711 12.6066 19.9853L4.12132 11.5L12.6066 3.01472C13.1924 2.42893 13.1924 1.47919 12.6066 0.893398C12.0208 0.307611 11.0711 0.307611 10.4853 0.893398L0.93934 10.4393ZM3 10H2L2 13H3V10Z" fill="black"/>
+          </svg></div>
         <ul class="about_slider_images_list">
           <li><img src="static/about/about_image_1.png" alt="slidebar_img_1"></li>
           <li><img src="static/about/about_image_2.png" alt="slidebar_img_2"></li>
@@ -69,6 +78,9 @@
           <li><img src="static/about/about_image_4.png" alt="slidebar_img_4"></li>
           <li><img src="static/about/about_image_5.png" alt="slidebar_img_5"></li>
         </ul>
+        <div class="adaptive_arrow"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="23" viewBox="0 0 14 23" fill="none">
+          <path d="M13.0607 12.5607C13.6464 11.9749 13.6464 11.0251 13.0607 10.4393L3.51472 0.893398C2.92893 0.307611 1.97919 0.307611 1.3934 0.893398C0.807611 1.47919 0.807611 2.42893 1.3934 3.01472L9.87868 11.5L1.3934 19.9853C0.807611 20.5711 0.807611 21.5208 1.3934 22.1066C1.97919 22.6924 2.92893 22.6924 3.51472 22.1066L13.0607 12.5607ZM11 13H12V10H11V13Z" fill="black"/>
+        </svg></div>
       </div>
       <div class="about_slider_pagination">
         <div class="pagination_circle_btn"><div class="pagination_circle_clicked"></div></div>
@@ -298,7 +310,7 @@
       </div>
       <div class="coffee_shop_menu desserts_and_cakes">
         <p class="coffee_shop_menu_title">Desserts &amp; Cakes</p>
-        <ul class="coffee_shop_list">
+        <ul class="coffee_shop_list coffee_shop_right">
           <li><p class="coffee_shop_list_name">Forest Gateau</p><div class="coffee_shop_list_line"></div><p class="coffee_shop_list_cost">&#36;16</p></li>
           <li><p class="coffee_shop_list_name">Blue Moon</p><div class="coffee_shop_list_line"></div><p class="coffee_shop_list_cost">&#36;16</p></li>
           <li><p class="coffee_shop_list_name">Truffle Cake</p><div class="coffee_shop_list_line"></div><p class="coffee_shop_list_cost">&#36;15</p></li>
@@ -343,7 +355,7 @@
       </form>
       <div class="card_description">
         <p class="card_description_title">Get a reader card</p>
-        <p class="card_description_text">You will be able to see a reader card after<br> logging into account or you can register a new<br> account</p>
+        <p class="card_description_text">You will be able to see a reader card after logging into account or you can register a new account</p>
         <div class="card_description_buttons">
           <button type="button" class="card_description_button bg_button">Sign Up</button>
           <button type="button" class="card_description_button bg_button">Log In</button>
@@ -382,6 +394,7 @@
       <a href="https://github.com/AkiraQZ" title="My GitHub">AkiraQZ</a>
     </div>
   </footer>
+</div>
 </body>
 
 </html>

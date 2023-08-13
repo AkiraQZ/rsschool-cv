@@ -10,10 +10,6 @@
 } */
 
 @media screen and (max-width:1024px) {
-  .nav_menu {
-    display: none;
-  }
-
   .section_subtext {
     width: 94vw;
   }
@@ -37,6 +33,12 @@ p {
     background-color: white;
   }
 
+  .body_wrapper {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+  }
+
   .container {
     max-width: 1440px;
     margin: 0 auto;
@@ -47,7 +49,13 @@ p {
     align-items: center;
     background-color: #0C0C0E;
     height: 90px;
-    padding: 0 20px;
+    padding: 0px 20px;
+  }
+
+  @media screen and (max-width:1024px) {
+    header {
+      padding: 0px 14px 0px 20px;
+    }
   }
 
   .header__container {
@@ -112,6 +120,49 @@ p {
     margin-right: 35px;
   }
 
+  @media screen and (max-width:1024px) {
+    .nav_menu {
+      display: block;
+      position: absolute;
+      right: -332px;
+      top: 89px;
+      width: 332px;
+      background-color: #0C0C0E;
+      z-index: 1;
+      transition: transform .5s, visability .5s;
+    }
+
+    .nav_list{
+      display: block;
+      text-align: center;
+    }
+
+    .nav_list>li {
+      margin-right: 0px;
+      margin-top: 57px;
+    }
+
+    .nav_list :last-child{
+      margin-right: 0px;
+      margin-bottom: 127px;
+    }
+
+    header.open .nav_menu {
+      transform: translateX(-100%);
+    }
+
+    header.open .burger_btn {
+      display: none;
+      visibility: hidden;
+    }
+
+    header.open .cross_btn {
+      display: block;
+      visibility: visible;
+      margin-left: 43px;
+    }
+  }
+
   .icon_profile {
     height: 28px;
     justify-self: flex-end;
@@ -120,12 +171,27 @@ p {
 
   .burger_btn {
     display: none;
+    position: relative;
+    background: none;
+    cursor: pointer;
+    border: none;
+    z-index: 2;
+
+  }
+
+  .cross_btn{
+    display: none;
+    position: relative;
+    background: none;
+    cursor: pointer;
+    border: none;
+    z-index: 2;
   }
 
   @media screen and (max-width: 1024px) {
     .burger_btn{
       display: block;
-      margin-left: 40px;
+      margin-left: 34px;
     }
   }
 
@@ -138,6 +204,7 @@ p {
    color: #000000;
    text-decoration: none;
    cursor: pointer;
+   z-index: 2;
   }
 
   .background_gradient{
@@ -237,6 +304,33 @@ p {
     padding: 0px 20px 0px 20px;
   }
 
+  .adaptive_arrow {
+    display: none;
+  }
+
+  @media screen and (max-width:1024px)  {
+    .about_slider_images_list > li:not(:first-child)  {
+      display: none;
+    }
+    .adaptive_arrow {
+      display: block;
+      margin-top: 40px;
+    }
+
+    .about_slider_images {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 15vw;
+    }
+  }
+
+  @media screen and (max-width:1024px) {
+    .about_slider_images{
+      gap:6vw
+    }
+  }
+
   .about_slider_images_list {
     list-style: none;
     display: flex;
@@ -246,9 +340,6 @@ p {
   }
   /* Скрытые картинки слайдера */
   .about_slider_images_list > li:nth-last-child(-n + 2) {
-    display: none;
-  }
-  .adaptive_arrow {
     display: none;
   }
 
@@ -261,6 +352,11 @@ p {
     margin-bottom: 37px;
   }
 
+  @media screen and (max-width:1024px) {
+    .about_slider_pagination {
+      margin-top: 2px;
+    }
+  }
   .pagination_circle_btn {
     display: flex;
     justify-items: center;
@@ -327,6 +423,14 @@ p {
 
   .favorites_button_label{
     margin: 0;
+  }
+
+  @media screen and (max-width:1024px) {
+    .favorites_buttons_list{
+      padding-left: 5px;
+      margin-top: 22px;
+      gap:5px
+    }
   }
 
   [type="radio"]:checked + .favorites_button_label:after {
@@ -405,6 +509,14 @@ p {
    row-gap: 40px;
    padding-bottom: 10px ;
    margin-bottom: 31px;
+}
+
+@media screen and (max-width: 1024px) {
+  .favorites_content_season{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .favorites_content_book {
@@ -522,6 +634,23 @@ p {
   padding: 20px;
 }
 
+@media screen and (max-width:1024px) {
+  .coffee_shop_contnent{
+    flex-direction: column;
+  }
+  .coffee_shop_subtext {
+    width: 100vw;
+  }
+
+  .coffee_shop_right > li {
+    justify-content: flex-end;
+  }
+
+  .desserts_and_cakes {
+    margin-top: 24px;
+  }
+}
+
 .coffee_shop_menu_title{
   color: #BB945F;
   font-family: Forum;
@@ -598,6 +727,18 @@ p {
   margin: 40px 20px 0px 20px;
 }
 
+@media screen and (max-width:1024px) {
+  .contacts_content {
+    flex-direction: column;
+    gap: 60px;
+  }
+  .contacts_img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .contacts_text {
   color: #000;
   text-align: left;
@@ -649,10 +790,23 @@ p {
   margin-bottom: 34px;
 }
 
+@media screen and (max-width:1024px) {
+  .contacts_section{
+    margin-bottom: 40px;
+  }
+}
+
 .card_section_content {
   display: flex;
   margin: 40px 20px 41px 20px;
   justify-content: space-between;
+}
+
+@media screen and (max-width:1024px) {
+  .card_section_content{
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .card_block {
@@ -766,7 +920,7 @@ p {
 }
 
 .card_description_text{
-  text-align: right;
+  width: 456px;
   color: #000;
   text-align: right;
   font-family: Inter;
@@ -791,6 +945,22 @@ p {
   flex-shrink: 0;
 }
 
+@media screen and (max-width:1024px) {
+  .card_description {
+    align-items: center;
+    gap: 40px;
+  }
+
+  .card_description_text {
+    text-align: center;
+    width: 78vw;
+  }
+
+  .card_block {
+    margin-bottom: 21px;
+  }
+}
+
 footer{
   margin-top: 40px;
   background-color:#0C0C0E;
@@ -799,11 +969,16 @@ footer{
 }
 
 .footer_line {
-  width: 1400px;
+  width: 100%;
   height: 1px;
   background: #FFF;
 }
+@media screen and (min-width:1440px){
+  .footer_line{
+    width: 1400px;
+  }
 
+}
 .footer_top{
   display: flex;
   flex-direction: row;
