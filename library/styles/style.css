@@ -237,6 +237,27 @@ p {
     padding: 0px 20px 0px 20px;
   }
 
+  .adaptive_arrow {
+    display: none;
+  }
+
+  @media screen and (max-width:1024px)  {
+    .about_slider_images_list > li:not(:first-child)  {
+      display: none;
+    }
+    .adaptive_arrow {
+      display: block;
+      margin-top: 40px;
+    }
+
+    .about_slider_images {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 6vw;
+    }
+  }
+
   .about_slider_images_list {
     list-style: none;
     display: flex;
@@ -246,9 +267,6 @@ p {
   }
   /* Скрытые картинки слайдера */
   .about_slider_images_list > li:nth-last-child(-n + 2) {
-    display: none;
-  }
-  .adaptive_arrow {
     display: none;
   }
 
@@ -261,6 +279,11 @@ p {
     margin-bottom: 37px;
   }
 
+  @media screen and (max-width:1024px) {
+    .about_slider_pagination {
+      margin-top: 2px;
+    }
+  }
   .pagination_circle_btn {
     display: flex;
     justify-items: center;
@@ -327,6 +350,14 @@ p {
 
   .favorites_button_label{
     margin: 0;
+  }
+
+  @media screen and (max-width:1024px) {
+    .favorites_buttons_list{
+      padding-left: 5px;
+      margin-top: 22px;
+      gap:5px
+    }
   }
 
   [type="radio"]:checked + .favorites_button_label:after {
@@ -405,6 +436,14 @@ p {
    row-gap: 40px;
    padding-bottom: 10px ;
    margin-bottom: 31px;
+}
+
+@media screen and (max-width: 1024px) {
+  .favorites_content_season{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .favorites_content_book {
