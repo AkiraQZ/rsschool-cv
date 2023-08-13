@@ -254,7 +254,13 @@ p {
       display: flex;
       flex-direction: row;
       align-items: center;
-      gap: 6vw;
+      gap: 15vw;
+    }
+  }
+
+  @media screen and (max-width:768px) {
+    .about_slider_images{
+      gap:6vw
     }
   }
 
@@ -561,6 +567,23 @@ p {
   padding: 20px;
 }
 
+@media screen and (max-width:1024px) {
+  .coffee_shop_contnent{
+    flex-direction: column;
+  }
+  .coffee_shop_subtext {
+    width: 100vw;
+  }
+
+  .coffee_shop_right > li {
+    justify-content: flex-end;
+  }
+
+  .desserts_and_cakes {
+    margin-top: 24px;
+  }
+}
+
 .coffee_shop_menu_title{
   color: #BB945F;
   font-family: Forum;
@@ -635,6 +658,15 @@ p {
   gap: 198px;
   align-items: flex-start;
   margin: 40px 20px 0px 20px;
+}
+
+@media screen and (max-width:1024px) {
+  .contacts_content {
+    flex-direction: column;
+  }
+  .contacts_img {
+
+  }
 }
 
 .contacts_text {
