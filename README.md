@@ -1,2 +1,3 @@
 # rsschool-cv
-https://rolling-scopes-school.github.io/AkiraQZ-JSFEPRESCHOOL2023Q2/library/
+[Deploy](https://akiraqz.github.io/rsschool-cv/)
+[Pull request](https://github.com/AkiraQZ/rsschool-cv/pull/9)
