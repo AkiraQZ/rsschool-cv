@@ -1,3 +1,9 @@
+:root {
+    --header_menu_background:#404e5cbe;
+    --header_footer_background:#404E5C;
+    --main_background:#EAB464;
+}
+
 @media (max-width: 768px) {
     body {
       width: 100%;
@@ -47,7 +53,7 @@
     }
 
     .nav_menu:hover .menu {
-        background-color: #404e5cbe;
+        background-color: var(--header_menu_background);
         padding: 8px;
         margin: 0px !important;
         display: flex !important;
@@ -140,7 +146,7 @@ main{
     color: white;
     padding-bottom: 10px;
     padding-top: 10px;
-    background-color: #EAB464;
+    background-color: var(--main_background);
     width: 70vw;
     border-radius: 24px;
 }
@@ -204,7 +210,7 @@ section {
 footer{
     display: flex;
     margin-top: 5px;
-    background-color:#404E5C;
+    background-color: var(--header_footer_background);
     width: 100%;
     max-height: 104px;
     justify-content: center;
