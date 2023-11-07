@@ -171,16 +171,16 @@ section {
     margin-right:3%;
 }
 
-.link {
+.link{
     text-decoration: none;
     color: white;
 }
 
-.link:visited {
+.link:visited{
     color: white;
 }
 
-.code {
+.code{
     background-color: rgb(73, 70, 70);
     font-size: medium;
 }
@@ -201,7 +201,7 @@ section {
     color: greenyellow
 }
 
-footer {
+footer{
     display: flex;
     margin-top: 5px;
     background-color:#404E5C;
@@ -217,7 +217,7 @@ footer {
     align-items: center;
 }
 
-.center {
+.center{
     display: flex;
     align-items: center;
 }
@@ -227,7 +227,7 @@ footer {
     max-width: 8vmin;
 }
 
-.text_footer {
+.text_footer{
     display: flex;
     font-size: 1.5vmax;
 }
