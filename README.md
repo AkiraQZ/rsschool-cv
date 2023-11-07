@@ -1,2 +1,3 @@
-https://AkiraQZ.github.io/rsschool-cv/cv  
-https://AkiraQZ.github.io/rsschool-cv/
+# rsschool-cv
+[Deploy](https://akiraqz.github.io/rsschool-cv/)   
+[Pull request](https://github.com/AkiraQZ/rsschool-cv/pull/9)
